@@ -7,7 +7,7 @@ public class Validator {
     public static void input () {
         Scanner console = new Scanner (System.in);
         input = console.nextLine(); //вводим строку
-        final String regexArabian = "^^([1-9]|10)\\\\s[+-/*]\\\\s([1-9]|10)$"; //шаблон для арабских цифр
+        final String regexArabian = "^^([1-9]|10)\\s[+-/*]\\s([1-9]|10)$"; //шаблон для арабских цифр
         final String regexRome = "^((I{1}(I{0,2}|V{0,1}|X{0,1}))|(V{1}I{0,3})|X)\\s[+-/*]\\s((I{1}(I{0,2}|V{0,1}|X{0,1}))|(V{1}I{0,3})|X)$"; //шаблон для римских цифр
         Pattern patternArabian = Pattern.compile(regexArabian);
         Matcher matcherArabian = patternArabian.matcher(input);
