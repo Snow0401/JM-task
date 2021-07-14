@@ -15,12 +15,12 @@ public class Transformer {
 
     public static void changeRome () { //раскладываем строку на отдельные элементы, переводим римские цифры в арабские
         String[] subStr = Validator.input.split(" ");
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 11; i++){
             if (subStr[0].equals(romeDigit[i])){
                 first = i;
             }
         }
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 11; i++){
             if (subStr[2].equals(romeDigit[i])){
                 second = i;
             }
